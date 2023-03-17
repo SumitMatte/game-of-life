@@ -9,20 +9,15 @@ pipeline {
    
    stages {
    
-         stage("create cont in slave-1"){
+         stage("create cont in slave-11"){
 		 
 				agent{
 			
-				label {label "slave-1"}
+				label {label "slave-11"}
 			}
 			
 			steps{
-			
-				   sh "sudo yum install docker -y"	 
-				   sh "sudo service docker start"			   
-
-				   
-				   
+			 	   
 				  sh "sudo mvn install"
 			   	   			
 			      sh "sudo git clone https://github.com/SumitMatte/docker-File.git" 
