@@ -3,18 +3,14 @@ pipeline {
   agent{
       label{
 	  
-	     label "slave-11"  
+	     label "slave-1"  
 	  }
   }
    
    stages {
    
-         stage("create cont in slave-11"){
+         stage("create cont in slave-1"){
 		 
-				agent{
-			
-				label {label "slave-11"}
-			}
 			
 			steps{
 			 	   
